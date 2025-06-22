@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Domagoj Kovačić">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <title>RP Online</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navigation">
+            <a href="index.php">
+                <img src="images/logo.png" alt="RP logo">
+            </a>
+            <a class="link" href="index.php">Home</a>
+            <a class="link" href="kategorija.php?id=Sport">Sport</a>
+            <a class="link" href="kategorija.php?id=Politika">Politika</a>
+            <a class="link" href="login.html">Administracija</a>
+            <a class="link" href="unos.php">Unos</a>
+        </nav>
+    </header>
+
+    <main class="main-unos">
+
+    <form action="registracija.php" method="POST">
+        <div class="container">                
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <br>
+
+            <label for="first_name"><b>Ime</b></label>
+            <input type="text" placeholder="" name="ime" required>
+            <br>
+
+            <label for="last_name"><b>Prezime</b></label>
+            <input type="text" placeholder="" name="prezime" required>
+            <br>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <br>
+
+            <label for="psw2"><b>Confirm Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password2" required>
+            <br>
+
+            <button type="submit">Register</button>
+        </div>
+    </form>
+
+    </main>
+
+<footer>
+        <div>
+            <p>Domagoj Kovačić</p>
+            <p>dkovacic2@tvz.hr</p>
+            <p>2025.</p>
+        </div>
+    </footer>
+</body>
+</html>
